@@ -6,7 +6,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 
 
 private fun openAboutViaBottomNav() {
-    onView(withId(R.id.bnToAboutActivity)).perform(click())
+    onView(withId(R.id.nav_view)).perform(click())
 }
 
 fun openAbout() = openAboutViaBottomNav()

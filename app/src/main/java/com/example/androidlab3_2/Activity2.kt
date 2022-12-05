@@ -13,7 +13,7 @@ class Activity2 : AppCompatActivity() {
         val binding = ActivitySecondBinding.inflate(layoutInflater)
         binding.bnToFirst.setOnClickListener { toActivity1() }
         binding.bnToThird.setOnClickListener { toActivity3() }
-        binding.bnToAboutActivity.setOnItemSelectedListener { toAboutActivity(it) }
+        binding.navView.setOnItemSelectedListener { toAboutActivity(it) }
         setContentView(binding.root)
     }
 
